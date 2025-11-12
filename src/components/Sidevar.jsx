@@ -82,6 +82,8 @@ export function SideVar() {
           </button>
         </div>
       </aside>
+
+      
             </div>
         </>
     )
