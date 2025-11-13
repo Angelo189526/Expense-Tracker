@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export function SideVar() {
     const [botonActive, setBotonActive] = useState(null);
@@ -27,16 +28,18 @@ export function SideVar() {
                <button className={`flex items-center gap-2 p-3 ${botonActive === 'HOME' ? 'bg-zinc-700 text-emerald-400 rounded-lg' : 'hover:bg-zinc-700 hover:text-emerald-400 rounded-lg text-white' }`}
                 onClick={() => listenClick('HOME')}
                 >
-                  
+                <Link to="/">
                 HOME
+                </Link>
                </button>
               </li>
               <li>
                    <button className={`flex items-center gap-2 p-3 ${botonActive === 'EXPENSES' ? 'bg-zinc-700 text-emerald-400 rounded-lg' : 'hover:bg-zinc-700 hover:text-emerald-400 rounded-lg text-white' }`}
                 onClick={() => listenClick('EXPENSES')}
                 >
-                  
-                EXPENSES 
+                <Link to="/expenses"> 
+                EXPENSES
+                </Link> 
                </button>
               </li>
                 <li>
