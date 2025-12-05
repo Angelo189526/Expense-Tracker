@@ -13,7 +13,7 @@ export function SideVar() {
       
         <>  
         
-    <div className="flex min-h-screen bg-gray-50 text-gray-800">
+   
      <aside className="w-64 bg-stone-800 shadow-md flex flex-col justify-between">
         <div>
           <div className="flex flex-col gap-3 p-4 border-b">
@@ -28,7 +28,7 @@ export function SideVar() {
                <button className={`flex items-center gap-2 p-3 ${botonActive === 'HOME' ? 'bg-zinc-700 text-emerald-400 rounded-lg' : 'hover:bg-zinc-700 hover:text-emerald-400 rounded-lg text-white' }`}
                 onClick={() => listenClick('HOME')}
                 >
-                <Link to="/">
+                <Link to="/home">
                 HOME
                 </Link>
                </button>
@@ -46,8 +46,9 @@ export function SideVar() {
                   <button className={`flex items-center gap-2 p-3 ${botonActive === 'TRIPS' ? 'bg-zinc-700 text-emerald-400 rounded-lg' : 'hover:bg-zinc-700 hover:text-emerald-400 rounded-lg text-white' }`}
                 onClick={() => listenClick('TRIPS')}
                 >
-                  
+                <Link to="/trips">
                 TRIPS 
+                </Link>  
                </button>
               </li>
                  <li>
@@ -87,7 +88,7 @@ export function SideVar() {
       </aside>
 
       
-            </div>
+
         </>
     )
 
